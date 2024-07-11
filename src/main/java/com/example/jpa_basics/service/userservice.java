@@ -1,5 +1,7 @@
-package com.example.jpa_basics;
+package com.example.jpa_basics.service;
 
+import com.example.jpa_basics.model.user;
+import com.example.jpa_basics.Repository.userrepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

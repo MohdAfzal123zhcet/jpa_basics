@@ -1,11 +1,14 @@
-package com.example.jpa_basics;
+package com.example.jpa_basics.model;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
 public class user {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int userid;
     private String name;
    private  int age;

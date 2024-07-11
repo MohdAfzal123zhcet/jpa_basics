@@ -1,5 +1,7 @@
-package com.example.jpa_basics;
+package com.example.jpa_basics.controller;
 
+import com.example.jpa_basics.model.user;
+import com.example.jpa_basics.service.userservice;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -7,6 +9,7 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/user")
 public class userController {
 @Autowired
 userservice us;
